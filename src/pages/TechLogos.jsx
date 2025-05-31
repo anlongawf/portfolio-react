@@ -21,7 +21,7 @@ export default function TechLogos() {
 
      return (
     <div className="tech-box container d-flex flex-column align-items-center text-center">
-      <h1 className="tech-text">Công nghệ sử dụng</h1>
+      <h1 className="tech-text" id="skills">Công nghệ sử dụng</h1>
       <div className="tech-logos">
         <div className="d-flex justify-content-center flex-nowrap">
           {techs.map((tech) => (

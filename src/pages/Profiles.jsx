@@ -9,9 +9,8 @@ export default function Profiles() {
       .then(data => setProfiles(data))
       .catch(err => console.error('Fetch error:', err));
   }, []);
-
   return (
-    <div className="container mt-5">
+    <div className="container mt-5" id="home">
       {profiles.map(profile => (
         <div className="row mb-4" key={profile.id}>
           <div className="col-md-4">
@@ -33,8 +32,9 @@ export default function Profiles() {
               </div>
             </div> {/* Đóng infor */}
           </div>
-          <div className="col-md-8">
+          <div className="col-md-8" id="about">
             <div className="content-box">
+              <p className="title">About me</p>
               <p className="desc">{profile.desc}</p>
             </div>
           </div>

@@ -20,7 +20,7 @@ export default function Project() {
 
 return (
   <div className="projects-section d-flex flex-column align-items-center justify-content-center container mt-5">
-    <h2 className="projects-title mt-4">My Projects</h2>
+    <h2 className="projects-title mt-4" id="projects">My Projects</h2>
     <div className="projects-wrapper">
       <button className="scroll-btn prev" onClick={() => scrollProjects(-300)}>&lt;</button>
 
