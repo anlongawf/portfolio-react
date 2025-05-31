@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function MyNavbar() {
   return (
     <Navbar bg="black" expand="lg" sticky="top" className="shadow-sm">
-        <Navbar.Brand as={Link} to="/">MyPortfolio</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" className="d-flex justify-content-center align-items-center">MyPortfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">

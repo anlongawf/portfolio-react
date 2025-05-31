@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Music Player Website",
+    "description": "Trang web nghe nhạc với playlist và bình luận.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbRWeTIZ_wpH3t5uYfkPwfeHZ47cfVBGWoLg&s",
+    "link": "https://github.com/yourname/music-player"
+  },
+  {
+    "id": 2,
+    "title": "Mini Social Network",
+    "description": "Mạng xã hội nhỏ để gửi thư tương lai.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbRWeTIZ_wpH3t5uYfkPwfeHZ47cfVBGWoLg&s",
+    "link": "https://yourwebsite.com/social"
+  },
+  {
+    "id": 3,
+    "title": "Todo App",
+    "description": "Ứng dụng quản lý công việc dùng React và LocalStorage.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbRWeTIZ_wpH3t5uYfkPwfeHZ47cfVBGWoLg&s",
+    "link": "https://github.com/yourname/todo-app"
+  },
+  {
+    "id": 4,
+    "title": "E-Commerce Demo",
+    "description": "Website bán hàng đơn giản tích hợp giỏ hàng.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbRWeTIZ_wpH3t5uYfkPwfeHZ47cfVBGWoLg&s",
+    "link": "https://yourwebsite.com/shop"
+  }
+]

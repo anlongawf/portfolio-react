@@ -1,26 +1,49 @@
-/* Reset mặc định và font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-.navbar {
-  font-family: 'Poppins', sans-serif;
-  margin: 25px;
-  background: linear-gradient(90deg, #1a1a1a, #2c2c2c);
-  padding: 35px;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  height: 80px;
-  border-radius: 15px;
+/* ========================
+   Biến toàn cục (Global variables)
+======================== */
+:root {
+  --font-main: 'Poppins', sans-serif;
+  --color-bg-start: #1a1a1a;
+  --color-bg-end: #2c2c2c;
+  --color-bg-sticky: #000000;
+  --color-text: #ffffff;
+  --color-hover: #00ff88;
+  --color-gradient-hover: linear-gradient(90deg, #00ff88, #00b7ff);
+  --color-shadow: rgba(0, 0, 0, 0.3);
+  --shadow-strong: rgba(0, 0, 0, 0.5);
+  --brand-icon: '🚀';
+  --navbar-height: 80px;
+  --radius: 15px;
+  --transition-fast: 0.3s ease;
+  --transition-slow: 0.5s ease;
 }
 
-/* Hiệu ứng sticky khi cuộn */
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* ========================
+   Navbar Base Style
+======================== */
+.navbar {
+  font-family: var(--font-main);
+  margin: 25px;
+  background: linear-gradient(90deg, var(--color-bg-start), var(--color-bg-end));
+  padding: 0 2rem;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 15px var(--color-shadow);
+  height: var(--navbar-height);
+  border-radius: var(--radius);
+  position: relative;
+  z-index: 10;
+}
+
+/* Sticky Navbar */
 .navbar.sticky {
-  background: linear-gradient(90deg, #000000, #1a1a1a);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-  transform: translateY(0);
+  background: linear-gradient(90deg, var(--color-bg-sticky), var(--color-bg-start));
+  box-shadow: 0 6px 20px var(--shadow-strong);
   animation: slideDown 0.5s ease forwards;
 }
 
-/* Hiệu ứng slide xuống cho sticky */
 @keyframes slideDown {
   from {
     transform: translateY(-100%);
@@ -32,52 +55,54 @@
   }
 }
 
-/* Logo (Navbar Brand) */
+/* ========================
+   Brand Logo
+======================== */
 .navbar-brand {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #ffffff !important;
+  color: var(--color-text) !important;
   position: relative;
   padding-left: 50px;
-  transition: all 0.3s ease;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  user-select: none;
 }
 
-/* Hiệu ứng gradient cho logo khi hover */
 .navbar-brand:hover {
-  color: #00ff88 !important;
+  color: var(--color-hover) !important;
   text-shadow: 0 0 10px rgba(0, 255, 136, 0.7);
   transform: scale(1.05);
 }
 
-/* Hiệu ứng icon hoặc chữ cho logo */
 .navbar-brand::before {
-  content: '🚀';
+  content: var(--brand-icon);
   position: absolute;
   left: 15px;
+  top: 0%;
+  transform: translateY(-50%);
   font-size: 1.5rem;
   animation: spin 4s linear infinite;
 }
 
-/* Hiệu ứng xoay cho icon */
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
-/* Nav Links */
+/* ========================
+   Nav Links
+======================== */
 .nav-link {
-  color: #ffffff !important;
+  color: var(--color-text) !important;
   font-size: 1.1rem;
   margin: 0 15px;
   position: relative;
-  transition: all 0.3s ease;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  user-select: none;
 }
 
-/* Hiệu ứng gạch chân động khi hover */
 .nav-link::after {
   content: '';
   position: absolute;
@@ -85,35 +110,41 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background: linear-gradient(90deg, #00ff88, #00b7ff);
-  transition: width 0.3s ease;
+  background: var(--color-gradient-hover);
+  transition: width var(--transition-fast);
+  border-radius: 2px;
 }
 
 .nav-link:hover::after {
   width: 100%;
 }
 
-/* Hiệu ứng khi hover vào link */
 .nav-link:hover {
-  color: #00ff88 !important;
+  color: var(--color-hover) !important;
   transform: translateY(-2px);
   text-shadow: 0 0 8px rgba(0, 255, 136, 0.6);
 }
 
-/* Hiệu ứng cho Navbar Toggle (menu trên mobile) */
+/* ========================
+   Toggler & Collapse
+======================== */
 .navbar-toggler {
   border: none;
-  transition: all 0.3s ease;
+  transition: all var(--transition-fast);
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  color: var(--color-text);
 }
 
 .navbar-toggler:hover {
   transform: rotate(90deg);
+  color: var(--color-hover);
 }
 
-/* Hiệu ứng khi mở menu trên mobile */
 .navbar-collapse {
-  transition: all 0.5s ease-in-out;
+  transition: all var(--transition-slow);
   animation: fadeIn 0.5s ease forwards;
+  background: transparent !important;
 }
 
 @keyframes fadeIn {
@@ -127,26 +158,24 @@
   }
 }
 
-/* Hiệu ứng gradient động cho nền khi hover toàn bộ navbar */
+/* ========================
+   Hover Animation Gradient on Navbar
+======================== */
 .navbar:hover {
-  background: linear-gradient(90deg, #1a1a1a, #2c2c2c, #1a1a1a);
-  background-size: 200%;
+  background: linear-gradient(90deg, var(--color-bg-start), var(--color-bg-end), var(--color-bg-start));
+  background-size: 200% 100%;
   animation: gradientMove 5s ease infinite;
 }
 
 @keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-/* Responsive cho mobile */
+/* ========================
+   Responsive Mobile
+======================== */
 @media (max-width: 991px) {
   .nav-link {
     margin: 10px 0;
@@ -154,10 +183,10 @@
   }
 
   .navbar-collapse {
-    background: #1a1a1a;
+    background: var(--color-bg-start) !important;
     border-radius: 10px;
     padding: 15px;
     margin-top: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 15px var(--color-shadow);
   }
 }

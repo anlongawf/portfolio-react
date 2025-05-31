@@ -4,9 +4,9 @@ export default function Profiles() {
   const [profiles, setProfiles] = useState([]);
 
   useEffect(() => {
-    fetch('/profiles.json')  // vì đặt trong public nên lấy file trực tiếp
-      .then(res => res.json()) // lấy body và parse JSON
-      .then(data => setProfiles(data)) // lấy dữ liệu JSON rồi gọi setProfiles để cập nhật state profiles với dữ liệu vừa nhận được
+    fetch('/profiles.json')
+      .then(res => res.json())
+      .then(data => setProfiles(data))
       .catch(err => console.error('Fetch error:', err));
   }, []);
 
@@ -20,7 +20,18 @@ export default function Profiles() {
               <p className="name">{profile.name}</p>
               <span className="job">{profile.job}</span>
               <div className="bio">{profile.bio}</div>
-            </div>
+              <div className="social-icons d-flex mt-3 justify-content-center">
+                <a href="https://facebook.com/yourprofile" className="social facebook mx-2" target="_blank" rel="noopener noreferrer">
+                  <i className="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com/yourprofile" className="social instagram mx-2" target="_blank" rel="noopener noreferrer">
+                  <i className="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://github.com/yourusername" className="social github mx-2" target="_blank" rel="noopener noreferrer">
+                  <i className="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div> {/* Đóng infor */}
           </div>
           <div className="col-md-8">
             <div className="content-box">
