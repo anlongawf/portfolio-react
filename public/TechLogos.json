@@ -1,26 +1,9 @@
 [
-  {
-    "id": 1,
-    "image": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
-  },
-  {
-    "id": 2,
-    "image": "https://cdn-icons-png.flaticon.com/512/732/732212.png"
-  },
-  {
-    "id": 3,
-    "image": "https://cdn-icons-png.flaticon.com/512/919/919827.png"
-  },
-  {
-    "id": 4,
-    "image": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
-  },
-  {
-    "id": 5,
-    "image": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
-  },
-  {
-    "id": 5,
-    "image": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
-  }
+  { "id": 1, "name": "Node.js", "image": "/images/nodedotjs.svg" },
+  { "id": 2, "name": "ASP.NET (C#)", "image": "/images/dotnet.svg" },
+  { "id": 3, "name": "MySQL", "image": "/images/mysql.svg" },
+  { "id": 5, "name": "MariaDB", "image": "/images/mariadb.svg" },
+  { "id": 6, "name": "Python", "image": "/images/python.svg" },
+  { "id": 7, "name": "Git", "image": "/images/git.svg" },
+  { "id": 8, "name": "Postman", "image": "/images/postman.svg" }
 ]

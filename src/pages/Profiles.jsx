@@ -20,13 +20,13 @@ export default function Profiles() {
               <span className="job">{profile.job}</span>
               <div className="bio">{profile.bio}</div>
               <div className="social-icons d-flex mt-3 justify-content-center">
-                <a href="https://facebook.com/yourprofile" className="social facebook mx-2" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/anphanhunter" className="social facebook mx-2" target="_blank" rel="noopener noreferrer">
                   <i className="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="https://instagram.com/yourprofile" className="social instagram mx-2" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/anphanpan" className="social instagram mx-2" target="_blank" rel="noopener noreferrer">
                   <i className="fa-brands fa-square-instagram"></i>
                 </a>
-                <a href="https://github.com/yourusername" className="social github mx-2" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/anlongawf/" className="social github mx-2" target="_blank" rel="noopener noreferrer">
                   <i className="fa-brands fa-github"></i>
                 </a>
               </div>

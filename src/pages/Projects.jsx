@@ -18,31 +18,38 @@ export default function Project() {
     }
   };
 
-return (
-  <div className="projects-section d-flex flex-column align-items-center justify-content-center container mt-5">
-    <h2 className="projects-title mt-4" id="projects">My Projects</h2>
-    <div className="projects-wrapper">
-      <button className="scroll-btn prev" onClick={() => scrollProjects(-300)}>&lt;</button>
+  return (
+  <section className="project-section" id="projects">
+    <div className="project-container">
+      <h2 className="projects-title">My Projects</h2>
+      <p className="project-desc-intro">Some of my products, scroll to see more!</p>
 
-      <div className="projects-scroll" ref={scrollRef}>
-       {projects.map((project, index) => (
+      <div className="project-wrapper">
+        <button className="scroll-btn left" onClick={() => scrollProjects(-350)}>◀</button>
+
+        <div className="project-scroll" ref={scrollRef}>
+          {projects.map((p) => (
             <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="target project-card"
-                key={index}
+              key={p.id}
+              href={p.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-card"
             >
-                <img src={project.image} alt={project.title} className="project-image" />
-                <p className="project-title">{project.title}</p>
+              <img src={p.image} alt={p.title} className="project-img" />
+              <div className="project-info">
+                <h3 className="project-title">{p.title}</h3>
+                <p className="project-desc">{p.description}</p>
+              </div>
             </a>
-            ))}
+          ))}
 
+        </div>
+
+        <button className="scroll-btn right" onClick={() => scrollProjects(350)}>▶</button>
       </div>
-
-      <button className="scroll-btn next" onClick={() => scrollProjects(300)}>&gt;</button>
     </div>
-  </div>
+  </section>
 );
 
 }

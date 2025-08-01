@@ -7,11 +7,11 @@
   --color-bg-end: #2c2c2c;
   --color-bg-sticky: #000000;
   --color-text: #ffffff;
-  --color-hover: #00ff88;
+  --color-hover: #4fc3f7;
   --color-gradient-hover: linear-gradient(90deg, #00ff88, #00b7ff);
   --color-shadow: rgba(0, 0, 0, 0.3);
   --shadow-strong: rgba(0, 0, 0, 0.5);
-  --brand-icon: '🚀';
+  --brand-icon: '💫	';
   --navbar-height: 80px;
   --radius: 15px;
   --transition-fast: 0.3s ease;

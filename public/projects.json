@@ -1,37 +1,16 @@
 [
   {
     "id": 1,
-    "title": "Music Player Website",
-    "description": "Trang web nghe nhạc với playlist và bình luận.",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbRWeTIZ_wpH3t5uYfkPwfeHZ47cfVBGWoLg&s",
-    "link": "https://github.com/yourname/music-player"
+    "title": "Basic Shop NodeJS",
+    "description": "Một shop mua bán cơ bản với Express JS",
+    "image": "https://media.discordapp.net/attachments/1261785923239018589/1400608087265644635/image.png?ex=688d416e&is=688befee&hm=1a95b489d132bafbd4e2c03003319c3a6ac60a68c5f6ff0523ce04f441f7fa38&=&format=webp&quality=lossless&width=2262&height=1398",
+    "link": "https://www.youtube.com/watch?v=V2kZKQlwCD4&t=15s"
   },
   {
     "id": 2,
-    "title": "Mini Social Network",
-    "description": "Mạng xã hội nhỏ để gửi thư tương lai.",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbRWeTIZ_wpH3t5uYfkPwfeHZ47cfVBGWoLg&s",
-    "link": "https://yourwebsite.com/social"
-  },
-  {
-    "id": 3,
-    "title": "Todo App",
-    "description": "Ứng dụng quản lý công việc dùng React và LocalStorage.",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbRWeTIZ_wpH3t5uYfkPwfeHZ47cfVBGWoLg&s",
-    "link": "https://github.com/yourname/todo-app"
-  },
-  {
-    "id": 4,
-    "title": "E-Commerce Demo",
-    "description": "Website bán hàng đơn giản tích hợp giỏ hàng.",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbRWeTIZ_wpH3t5uYfkPwfeHZ47cfVBGWoLg&s",
-    "link": "https://yourwebsite.com/shop"
-  },
-  {
-    "id": 5,
-    "title": "E-Commerce Demo",
-    "description": "Website bán hàng đơn giản tích hợp giỏ hàng.",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbRWeTIZ_wpH3t5uYfkPwfeHZ47cfVBGWoLg&s",
-    "link": "https://yourwebsite.com/shop"
+    "title": "Realtime Chat App",
+    "description": "Ứng dụng chat thời gian thực với Socket.IO.",
+    "image": "https://i.imgur.com/QN9LjhC.jpeg",
+    "link": "https://github.com/yourusername/realtime-chat-app"
   }
 ]

@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import Donate from './pages/Donate.jsx';
+import Review from './pages/Review';
 import './styles/index.css';
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/donate" element={<Donate />} />
+        <Route path="/review" element={<Review />} />
       </Routes>
     </BrowserRouter>
   );

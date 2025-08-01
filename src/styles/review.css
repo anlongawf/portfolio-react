@@ -1,0 +1,118 @@
+.contact-container {
+  max-width: 500px;
+  margin: 60px auto;
+  background: linear-gradient(to right, #ffe5ec, #e0f7fa);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 0 18px rgba(255, 105, 180, 0.2);
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.contact-title {
+  font-size: 26px;
+  color: #ff69b4;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-input,
+.contact-textarea {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 2px solid #ffb6c1;
+  font-size: 16px;
+  transition: 0.3s ease;
+  outline: none;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  border-color: #ff69b4;
+  box-shadow: 0 0 10px #ff69b4aa;
+}
+
+.contact-textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.contact-button {
+  background: #ff69b4;
+  color: white;
+  padding: 12px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background: #ff1493;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px #ff69b4aa;
+}
+
+.contact-status {
+  margin-top: 15px;
+  font-size: 15px;
+  color: #d63384;
+}
+
+.review-section {
+  margin-top: 40px;
+  border-top: 1px dashed #ccc;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.review-title {
+  font-size: 1.5rem;
+  color: #ff69b4;
+  margin-bottom: 15px;
+}
+
+.review-list {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #fff0f5;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(255, 192, 203, 0.4);
+}
+
+.review-title {
+  font-size: 1.4rem;
+  color: #ff69b4;
+  margin-bottom: 1rem;
+}
+
+.review-item {
+  background: #fff0f6;
+  border-radius: 16px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 8px rgba(255, 192, 203, 0.2);
+}
+
+.review-message {
+  font-style: italic;
+  font-size: 1rem;
+  color: #333;
+}
+
+.review-meta {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.empty-review {
+  color: #aaa;
+  font-style: italic;
+}
+
