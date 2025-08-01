@@ -15,7 +15,7 @@ export default function Contact() {
     }
 
     try {
-      const res = await fetch('http://localhost:3001/api/messages', {
+      const res = await fetch('http://testsv.shinelord.net:30006/api/messages', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, message }),
