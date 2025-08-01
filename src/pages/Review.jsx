@@ -15,7 +15,7 @@ export default function Contact() {
     }
 
     try {
-      const res = await fetch('hhttps://ans.shinelord.net//api/messages', {
+      const res = await fetch('hhttps://ans.shinelord.net/api/messages', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, message }),
@@ -38,7 +38,7 @@ export default function Contact() {
 
   const fetchReviews = async () => {
     try {
-      const res = await fetch('https://ans.shinelord.net//api/messages');
+      const res = await fetch('https://ans.shinelord.net/api/messages');
       const data = await res.json();
       setReviews(data); 
         console.log("Fetched reviews:", data);
