@@ -15,7 +15,7 @@ export default function Contact() {
     }
 
     try {
-      const res = await fetch('http://localhost:3001/api/messages', {
+      const res = await fetch('hhttps://ans.shinelord.net//api/messages', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, message }),
@@ -26,7 +26,7 @@ export default function Contact() {
         setStatus("🎉 Yay! Your message is flying to me 💌");
         setMessage('');
         setName('');
-        fetchReviews(); // Reload review list
+        fetchReviews(); 
       } else {
         setStatus(`❌ ${data.error || 'Something went wrong...'}`);
       }
@@ -38,9 +38,10 @@ export default function Contact() {
 
   const fetchReviews = async () => {
     try {
-      const res = await fetch('http://localhost:3001/api/messages');
+      const res = await fetch('https://ans.shinelord.net//api/messages');
       const data = await res.json();
-      setReviews(data); // newest first
+      setReviews(data); 
+        console.log("Fetched reviews:", data);
     } catch (err) {
       console.error("Failed to load reviews 😵", err);
     }
